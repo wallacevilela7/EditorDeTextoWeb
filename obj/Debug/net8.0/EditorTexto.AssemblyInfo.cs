@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("EditorTexto")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+288116f57fd197fabb26382b6062d7677d4cb8ac")]
 [assembly: System.Reflection.AssemblyProductAttribute("EditorTexto")]
 [assembly: System.Reflection.AssemblyTitleAttribute("EditorTexto")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
