@@ -46,7 +46,3 @@ Contribuições são bem-vindas! Se você deseja contribuir para este projeto, s
 ## Licença
 
 Este projeto está licenciado sob a [Licença MIT](LICENSE). Sinta-se à vontade para utilizá-lo de acordo com as condições da licença.
-
----
-
-Esse é um resumo básico do que você pode adicionar a um README para um projeto ASP.NET de um editor de texto web. Certifique-se de personalizá-lo conforme as necessidades específicas do seu projeto!
