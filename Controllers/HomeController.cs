@@ -2,6 +2,7 @@ using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using EditorTexto.Models;
 using EditorTexto.Data;
+using Microsoft.EntityFrameworkCore;
 
 namespace EditorTexto.Controllers;
 
@@ -14,8 +15,10 @@ public class HomeController : Controller
     {
         _context = context;
     }
-    public IActionResult Index()
+
+    public async Task<IActionResult> Index()
     {
-        return View();
+        var doc = await _context.Documentos.ToListAsync(); 
+        return View(doc);
     }
 }
