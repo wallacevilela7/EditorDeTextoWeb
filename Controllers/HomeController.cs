@@ -8,7 +8,6 @@ namespace EditorTexto.Controllers;
 
 public class HomeController : Controller
 {
-
     private readonly AppDbContext _context;
 
     public HomeController(AppDbContext context)
@@ -20,5 +19,23 @@ public class HomeController : Controller
     {
         var doc = await _context.Documentos.ToListAsync(); 
         return View(doc);
+    }
+
+    public IActionResult CriarDocumento(){
+        return View();
+    }
+
+    [HttpPost]
+    public async Task<IActionResult> CriarDocumento(Documento docRec){
+        if(ModelState.IsValid){
+            _context.Add(docRec);
+            await _context.SaveChangesAsync();
+
+            return RedirectToAction("Index");
+        }
+        else 
+        {
+            return View(docRec);
+        }
     }
 }
