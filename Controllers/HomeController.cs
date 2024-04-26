@@ -38,4 +38,9 @@ public class HomeController : Controller
             return View(docRec);
         }
     }
+
+    public async Task<IActionResult> EditarDocumento(int id){
+        var doc = await _context.Documentos.FirstOrDefaultAsync(x => x.Id == id);
+        return View(doc);
+    }
 }
